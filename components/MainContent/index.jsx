@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import CHARACTERS from '../../utilities/constants.utilities';
-import Link from 'next/link';
-import styles from '../../styles/page.module.css';
+import Image from "next/image";
+import CHARACTERS from "@/utilities/constants.utilities";
+import Link from "next/link";
+import styles from "@/styles/page.module.css";
 
 const MainContent = () => {
   return (
@@ -21,7 +21,8 @@ const MainContent = () => {
                 src={character.imgUrl}
                 width={300}
                 height={300}
-                alt='character'
+                alt="character"
+                className={`char_img`}
               />
             </Link>
           );
